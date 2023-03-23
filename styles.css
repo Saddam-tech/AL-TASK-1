@@ -22,3 +22,66 @@
 #nav-bar-top .logo-bar .lazy {
   margin-right: 16px;
 }
+
+#main-section-1 {
+  background-color: #000000;
+  width: 100%;
+}
+
+#main-section-1 .sub-section-1 {
+  display: flex;
+  width: 100%;
+}
+
+.sub-section-1 .text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+  color: #ffffff;
+}
+
+.sub-section-1 .text-content h2 {
+  margin-bottom: 46px;
+  font-size: 28px;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.sub-section-1 .text-content p {
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.sub-section-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.sub-section-2 img {
+  max-width: 680px;
+  margin: 80px 40px;
+}
+
+.sub-section-2 div {
+  max-width: 600px;
+}
+
+.sub-section-2 div p {
+  color: #ffffff;
+  font-weight: 200;
+}
+
+.sub-section-2 div .bold {
+  font-weight: 400;
+  font-style: normal;
+  max-width: 425px;
+}
+
+.sub-section-2 div .bold span {
+  color: #c2a578;
+}
