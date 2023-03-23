@@ -10,8 +10,8 @@ body {
 #up-front {
   text-align: center;
   width: 100%;
-  height: 30px;
-  background-color: #ffffff;
+  height: 100%;
+  background-color: #f1f1f1;
 }
 #up-front p {
   font-size: 12px;
@@ -19,6 +19,8 @@ body {
   color: #000000;
   font-family: "Oswald", sans-serif;
   letter-spacing: 0.16em;
+  padding: 8px;
+  margin: 0;
 }
 
 #nav-bar-top {
@@ -163,10 +165,16 @@ body {
 
 .footer {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: space-around;
   background-color: #f1f1f1;
   height: 438px;
+  padding-top: 80px;
+  z-index: -1;
+}
+
+.footer .column-1 {
+  z-index: 2;
 }
 
 .footer .column-1 .header {
@@ -186,6 +194,10 @@ body {
   padding: 10px 0;
 }
 
+.footer .column-1 .input-holder:hover {
+  border-bottom: 1px solid rgb(146, 146, 255);
+}
+
 .footer .column-1 .input-holder img {
   height: 100%;
 }
@@ -194,8 +206,78 @@ body {
   border: none;
   width: 400px;
   background: transparent;
+  outline: none;
 }
 .footer .column-1 .input-holder input::placeholder {
   color: #000000;
   opacity: 0.3;
+  font-weight: 200;
+}
+
+.footer .column-1 .input-holder input:focus {
+  outline: none;
+}
+
+.footer .column-1 .socials {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80px;
+  margin-top: 26px;
+}
+
+.footer .column-1 .socials img {
+  width: 16px;
+  height: 16px;
+}
+
+.footer .column-1 ul {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 0;
+  gap: 12px;
+}
+
+.footer .column-1 ul li {
+  list-style-type: none;
+  color: #000000;
+  opacity: 0.5;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.transparent-logo {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  width: 449px;
+}
+
+@media only screen and (max-width: 600px) {
+  #nav-bar-top {
+    padding: 16px 0;
+  }
+
+  #nav-bar-top ul {
+    display: none;
+  }
+
+  #nav-bar-top .-x {
+    display: none;
+  }
+
+  #main-section-1 .sub-section-1 {
+    flex-direction: column;
+  }
+
+  #main-section-1 .sub-section-1 .text-content {
+    gap: 19px;
+  }
+
+  .sub-section-1 .text-content h2 {
+    font-size: 18px;
+    margin: 0;
+  }
 }
