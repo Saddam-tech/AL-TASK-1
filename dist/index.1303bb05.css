@@ -1,0 +1,27 @@
+* {
+  font-family: Open Sans, sans-serif;
+}
+
+#nav-bar-top {
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+}
+
+#nav-bar-top ul {
+  align-items: center;
+  gap: 40px;
+  display: flex;
+}
+
+#nav-bar-top ul li {
+  font-size: 12px;
+  list-style-type: none;
+}
+
+#nav-bar-top .logo-bar .lazy {
+  margin-right: 16px;
+}
+
+/*# sourceMappingURL=index.1303bb05.css.map */
