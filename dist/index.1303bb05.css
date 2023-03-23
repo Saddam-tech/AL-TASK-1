@@ -2,6 +2,11 @@
   font-family: Open Sans, sans-serif;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 #nav-bar-top {
   width: 100%;
   justify-content: space-around;
@@ -85,6 +90,14 @@
 
 .sub-section-2 div .bold span {
   color: #c2a578;
+}
+
+.sub-section-2 h1 {
+  color: #fff;
+  max-width: 417px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  font-size: 40px;
 }
 
 /*# sourceMappingURL=index.1303bb05.css.map */
