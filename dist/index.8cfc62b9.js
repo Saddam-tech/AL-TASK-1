@@ -590,7 +590,7 @@ const products = [
     {
         id: 3,
         shipping: "Free Shipping",
-        image_src: (0, _product3PngDefault.default),
+        image_src: (0, _product4PngDefault.default),
         name: "product name",
         price: "$34.00",
         star_count: (0, _star5SvgDefault.default)
@@ -598,7 +598,39 @@ const products = [
     {
         id: 4,
         shipping: "Free Shipping",
+        image_src: (0, _product3PngDefault.default),
+        name: "product name",
+        price: "$34.00",
+        star_count: (0, _star5SvgDefault.default)
+    },
+    {
+        id: 5,
+        shipping: "Free Shipping",
+        image_src: (0, _product1PngDefault.default),
+        name: "product name",
+        price: "$34.00",
+        star_count: (0, _star5SvgDefault.default)
+    },
+    {
+        id: 6,
+        shipping: "Free Shipping",
+        image_src: (0, _product2PngDefault.default),
+        name: "product name",
+        price: "$34.00",
+        star_count: (0, _star5SvgDefault.default)
+    },
+    {
+        id: 7,
+        shipping: "Free Shipping",
         image_src: (0, _product4PngDefault.default),
+        name: "product name",
+        price: "$34.00",
+        star_count: (0, _star5SvgDefault.default)
+    },
+    {
+        id: 8,
+        shipping: "Free Shipping",
+        image_src: (0, _product3PngDefault.default),
         name: "product name",
         price: "$34.00",
         star_count: (0, _star5SvgDefault.default)
