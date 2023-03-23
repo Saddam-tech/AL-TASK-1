@@ -160,3 +160,42 @@ body {
 #carousel .product .image-wrap img {
   max-width: 328px;
 }
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f1f1;
+  height: 438px;
+}
+
+.footer .column-1 .header {
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 0.165em;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.footer .column-1 .input-holder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 460px;
+  border-bottom: 1px solid #c4c4c4;
+  padding: 10px 0;
+}
+
+.footer .column-1 .input-holder img {
+  height: 100%;
+}
+
+.footer .column-1 .input-holder input {
+  border: none;
+  width: 400px;
+  background: transparent;
+}
+.footer .column-1 .input-holder input::placeholder {
+  color: #000000;
+  opacity: 0.3;
+}
