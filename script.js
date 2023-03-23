@@ -40,6 +40,38 @@ const products = [
     price: "$34.00",
     star_count: star5,
   },
+  {
+    id: 5,
+    shipping: "Free Shipping",
+    image_src: product_1,
+    name: "product name",
+    price: "$34.00",
+    star_count: star5,
+  },
+  {
+    id: 6,
+    shipping: "Free Shipping",
+    image_src: product_2,
+    name: "product name",
+    price: "$34.00",
+    star_count: star5,
+  },
+  {
+    id: 7,
+    shipping: "Free Shipping",
+    image_src: product_3,
+    name: "product name",
+    price: "$34.00",
+    star_count: star5,
+  },
+  {
+    id: 8,
+    shipping: "Free Shipping",
+    image_src: product_4,
+    name: "product name",
+    price: "$34.00",
+    star_count: star5,
+  },
 ];
 
 (async function () {
