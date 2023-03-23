@@ -557,10 +557,78 @@ function hmrAccept(bundle, id) {
 }
 
 },{}],"6rimH":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+var _product1Png = require("./static/product_1.png");
+var _product1PngDefault = parcelHelpers.interopDefault(_product1Png);
+var _product2Png = require("./static/product_2.png");
+var _product2PngDefault = parcelHelpers.interopDefault(_product2Png);
+var _product3Png = require("./static/product_3.png");
+var _product3PngDefault = parcelHelpers.interopDefault(_product3Png);
+var _product4Png = require("./static/product_4.png");
+var _product4PngDefault = parcelHelpers.interopDefault(_product4Png);
+var _star5Svg = require("./static/star5.svg");
+var _star5SvgDefault = parcelHelpers.interopDefault(_star5Svg);
 const { parseStringToHTML  } = require("fbd388f9c7c013d6");
-const navbar = document.getElementById("nav-bar-top");
+const carousel = document.getElementById("carousel");
+const products = [
+    {
+        id: 1,
+        shipping: "Free Shipping",
+        image_src: (0, _product1PngDefault.default),
+        name: "product name",
+        price: "$34.00",
+        star_count: (0, _star5SvgDefault.default)
+    },
+    {
+        id: 2,
+        shipping: "Free Shipping",
+        image_src: (0, _product2PngDefault.default),
+        name: "product name",
+        price: "$34.00",
+        star_count: (0, _star5SvgDefault.default)
+    },
+    {
+        id: 3,
+        shipping: "Free Shipping",
+        image_src: (0, _product3PngDefault.default),
+        name: "product name",
+        price: "$34.00",
+        star_count: (0, _star5SvgDefault.default)
+    },
+    {
+        id: 4,
+        shipping: "Free Shipping",
+        image_src: (0, _product4PngDefault.default),
+        name: "product name",
+        price: "$34.00",
+        star_count: (0, _star5SvgDefault.default)
+    }
+];
+(async function() {
+    const _products = [];
+    for (let p of products){
+        let parsed_HTML = `
+    <div class="product">
+      <div class="image-wrap">
+        <img src="${p.image_src}" alt="${p.id}">
+      </div>
+        <p class="bold">
+            ${p.name}
+        </p> 
+        <span>
+        ${new Array(5).fill("*").map((el)=>`<img src="${p.star_count}" alt="${p.id}" />`).join(" ")}
+        </span>
+        <p class="price">
+        ${p.price}
+        </p> 
+    </div>
+    `;
+        _products.push(parsed_HTML);
+    }
+    carousel.innerHTML = _products.map((el)=>el).join("");
+})();
 
-},{"fbd388f9c7c013d6":"bIDtH"}],"bIDtH":[function(require,module,exports) {
+},{"fbd388f9c7c013d6":"bIDtH","./static/product_1.png":"kFu5o","./static/product_2.png":"aksxS","./static/product_3.png":"2Omoy","./static/product_4.png":"bQtpn","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./static/star5.svg":"5fkj1"}],"bIDtH":[function(require,module,exports) {
 const parseStringToHTML = (str)=>{
     const parser = new DOMParser();
     return parser.parseFromString(str, "text/html");
@@ -569,6 +637,85 @@ module.exports = {
     parseStringToHTML
 };
 
-},{}]},["dpgAG","6rimH"], "6rimH", "parcelRequiread5b")
+},{}],"kFu5o":[function(require,module,exports) {
+module.exports = require("a725bc5597324a75").getBundleURL("fqV6O") + "product_1.9fbbb985.png" + "?" + Date.now();
+
+},{"a725bc5597324a75":"lgJ39"}],"lgJ39":[function(require,module,exports) {
+"use strict";
+var bundleURL = {};
+function getBundleURLCached(id) {
+    var value = bundleURL[id];
+    if (!value) {
+        value = getBundleURL();
+        bundleURL[id] = value;
+    }
+    return value;
+}
+function getBundleURL() {
+    try {
+        throw new Error();
+    } catch (err) {
+        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
+        if (matches) // The first two stack frames will be this function and getBundleURLCached.
+        // Use the 3rd one, which will be a runtime in the original bundle.
+        return getBaseURL(matches[2]);
+    }
+    return "/";
+}
+function getBaseURL(url) {
+    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
+} // TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
+function getOrigin(url) {
+    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
+    if (!matches) throw new Error("Origin not found");
+    return matches[0];
+}
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+exports.getOrigin = getOrigin;
+
+},{}],"aksxS":[function(require,module,exports) {
+module.exports = require("f112e923a496b9a6").getBundleURL("fqV6O") + "product_2.d05344be.png" + "?" + Date.now();
+
+},{"f112e923a496b9a6":"lgJ39"}],"2Omoy":[function(require,module,exports) {
+module.exports = require("d28e9f7afccd1d9e").getBundleURL("fqV6O") + "product_3.0a6bc928.png" + "?" + Date.now();
+
+},{"d28e9f7afccd1d9e":"lgJ39"}],"bQtpn":[function(require,module,exports) {
+module.exports = require("553e3f20190b45ab").getBundleURL("fqV6O") + "product_4.8bcc6640.png" + "?" + Date.now();
+
+},{"553e3f20190b45ab":"lgJ39"}],"gkKU3":[function(require,module,exports) {
+exports.interopDefault = function(a) {
+    return a && a.__esModule ? a : {
+        default: a
+    };
+};
+exports.defineInteropFlag = function(a) {
+    Object.defineProperty(a, "__esModule", {
+        value: true
+    });
+};
+exports.exportAll = function(source, dest) {
+    Object.keys(source).forEach(function(key) {
+        if (key === "default" || key === "__esModule" || dest.hasOwnProperty(key)) return;
+        Object.defineProperty(dest, key, {
+            enumerable: true,
+            get: function() {
+                return source[key];
+            }
+        });
+    });
+    return dest;
+};
+exports.export = function(dest, destName, get) {
+    Object.defineProperty(dest, destName, {
+        enumerable: true,
+        get: get
+    });
+};
+
+},{}],"5fkj1":[function(require,module,exports) {
+module.exports = require("1395795093a408de").getBundleURL("fqV6O") + "star5.13ed1e3e.svg" + "?" + Date.now();
+
+},{"1395795093a408de":"lgJ39"}]},["dpgAG","6rimH"], "6rimH", "parcelRequiread5b")
 
 //# sourceMappingURL=index.8cfc62b9.js.map

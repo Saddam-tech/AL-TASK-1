@@ -98,3 +98,29 @@ body {
   letter-spacing: 0.18em;
   text-transform: uppercase;
 }
+
+.sub-section-3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
+#carousel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#carousel .product {
+  margin: 16px;
+  font-weight: 300;
+}
+
+#carousel .product p {
+  margin: 8px 0;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
