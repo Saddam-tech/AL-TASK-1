@@ -80,6 +80,7 @@ const products = [
     let parsed_HTML = `
     <div class="product">
       <div class="image-wrap">
+        <span class="ship-price">Free Shipping</span>
         <img loading="lazy" src="${p.image_src}" alt="${p.id}">
       </div>
         <p class="bold">

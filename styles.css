@@ -9,7 +9,7 @@ body {
 
 .line-holder {
   display: flex;
-  gap: 29%;
+  gap: 25%;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -29,7 +29,7 @@ body {
 #up-front {
   text-align: center;
   width: 100%;
-  height: 100%;
+  height: 40px;
   background-color: #f1f1f1;
   z-index: 3;
   position: relative;
@@ -47,11 +47,12 @@ body {
 #nav-bar-top {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
   background-color: #ffffff;
   z-index: 3;
   position: relative;
+  height: 52px;
 }
 
 #nav-bar-top ul {
@@ -168,11 +169,13 @@ body {
 
 .sub-section-3 h3 {
   margin-top: 80px;
-  font-family: "Oswald", sans-serif;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  font-size: 32px;
-  font-weight: 400;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 28px;
+  line-height: 130%;
 }
 
 #carousel {
@@ -193,10 +196,28 @@ body {
   font-family: "Oswald", sans-serif;
   letter-spacing: 0.16em;
   text-transform: uppercase;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 168%;
 }
 
 #carousel .product .image-wrap {
   width: 100%;
+  position: relative;
+}
+
+#carousel .product .image-wrap .ship-price {
+  position: absolute;
+  padding: 5px;
+  margin: 8px;
+  background-color: #ffffff;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 167.5%;
+  text-align: center;
 }
 #carousel .product .image-wrap img {
   max-width: 328px;
@@ -208,7 +229,7 @@ body {
   align-items: flex-start;
   justify-content: space-around;
   background-color: #f1f1f1;
-  height: 438px;
+  height: 338px;
   padding-top: 80px;
   z-index: 3;
   position: relative;
@@ -219,11 +240,14 @@ body {
 }
 
 .footer .column-1 .header {
-  font-family: "Oswald", sans-serif;
+  line-height: 14px;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  /* identical to box height */
   letter-spacing: 0.165em;
   text-transform: uppercase;
-  font-size: 12px;
-  line-height: 14px;
 }
 
 .footer .column-1 .input-holder {
@@ -291,15 +315,30 @@ body {
   font-weight: 200;
 }
 
-.footer .copyright {
-  display: none;
-}
-
 .transparent-logo {
   position: absolute;
   z-index: 1;
   left: 0;
   width: 449px;
+}
+
+.copyright {
+  z-index: 4;
+  position: relative;
+  background-color: #f1f1f1;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding-bottom: 100px;
+  text-align: center;
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 167.5%;
+
+  color: #c4c4c4;
 }
 
 /* Mobile */
