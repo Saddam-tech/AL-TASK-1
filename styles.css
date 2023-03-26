@@ -372,6 +372,7 @@ body {
 
   #main-section-1 .sub-section-1 .text-content {
     gap: 19px;
+    padding-top: 50px;
   }
 
   .sub-section-1 .text-content h2 {
